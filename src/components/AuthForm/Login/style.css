@@ -1,0 +1,141 @@
+.AuthForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.AuthForm .Form {
+    width: 478px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 4px 40px rgba(26, 26, 26, 0.15);
+    backdrop-filter: blur(30px);
+    box-sizing: border-box;
+    padding: 54px 80px ;
+    border-radius: 20px;
+}
+
+.AuthForm .Form .heading {
+    width: 169px;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    color: #623BFF;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.AuthForm .Form input[type="text"], input[type="password"] {
+    background: #EBEBEB;
+    border-radius: 8px;
+    width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+}
+
+.AuthForm .Form label {
+    display: flex;
+    font-size: 13px;
+    color: #5B5B5B;
+    margin: 20px 0 10px;
+}
+
+.AuthForm .Form button {
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.Login button:first-child {
+    margin-top: 24px;
+}
+
+.Login button,
+.Signup button {
+    margin-top: 24px;
+}
+
+.AuthForm .LoginBtn {
+    background: linear-gradient(270deg, #FF32C6 26.04%, #793AFF 100%);
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.AuthForm .SignupBtn {
+    background: linear-gradient(270deg, #793AFF 26.04%, #FF32C6 100%);
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.AuthForm .LoginBtn:hover,
+.AuthForm .SignupBtn:hover {
+    color: #ffffff9d;
+    cursor: pointer;
+}
+
+.AuthForm .IsNotAuth {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+}
+
+.AuthForm .is-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 23px 0;
+}
+
+.AuthForm .is-content .line {
+    width: 76px;
+    background-color: #C4C4C4;
+    border-radius: 8px;
+    height: 2px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.ErrorMessage {
+    color: rgb(255, 72, 0);
+}
+
+.AuthForm .second-btn {
+    background: #fff;
+    color: #be32ff;
+    position: relative;
+    height: calc(inherit - 4px);
+}
+
+.AuthForm .second-btn:hover {
+    color: #de3aff;
+
+}
+
+.second-btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(270deg, #ee32ff 26.04%, #793AFF 100%);
+    border-radius: 9px;
+    z-index: -1;
+}
