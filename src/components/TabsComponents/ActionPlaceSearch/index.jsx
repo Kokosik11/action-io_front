@@ -39,20 +39,22 @@ const ActionPlaceSearch = props => {
 
                 {projects && projects.map((project) => (
                     <Link to={`/project/${project.id}`} key={project.id} className="Action">
-                        <div className="daylefts">
-                            <div className="circle red"></div>
-                            <div className="daylefts-content">
-                                {getTimeLefts(project.atCreated)}
+                        <div className="action-heading">
+                            <div className="daylefts">
+                                <div className="circle red"></div>
+                                <div className="daylefts-content">
+                                    {getTimeLefts(project.atCreated)}
+                                </div>
+                            </div>
+                            
+                            <div className="action-title">
+                                <h2>{project.title}</h2>
+                                <div className="description">{project.description}</div>
                             </div>
                         </div>
                         
-                        <div className="action-title">
-                            <h2>{project.title}</h2>
-                            <div className="description">{project.description}</div>
-                        </div>
-
                         <div className="mini-statistic">
-                            {project.actions.length}
+                            Actions: {project.actions.length}
                         </div>
                     </Link>
                 ))
