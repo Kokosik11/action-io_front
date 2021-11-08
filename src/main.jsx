@@ -8,7 +8,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router forceRefresh={true}>
+    <Router hashType="noslash">
         <App />
     </Router>
   </React.StrictMode>,

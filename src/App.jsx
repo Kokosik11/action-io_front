@@ -3,7 +3,8 @@ import {
   Switch,
   Route,
   Redirect,
-  Link
+  Link,
+  useHistory
 } from "react-router-dom";
 
 import Cookie from './tools/Cookies';
@@ -18,6 +19,7 @@ import User from "./components/User";
 import UserProject from "./components/UserProject";
 
 function App() {
+  let history = useHistory();
   useEffect(() => {
     let userId = Cookie.getCookie('user');
     if(!userId) {
@@ -26,7 +28,7 @@ function App() {
   }, [])
 
   const isUserAuthenticated = () => {
-    if(!document.cookie) window.location = '/auth';
+    if(!document.cookie) history.push('/auth');
   }
 
   
