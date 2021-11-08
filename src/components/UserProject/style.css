@@ -1,0 +1,272 @@
+.Project {
+    width: 100%;
+    min-height: 100%;
+    background-color: #F5F7F9;
+    box-sizing: border-box;
+    padding-top: 21px;
+}
+
+.project-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-header {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    min-height: 250px;
+    box-sizing: border-box;
+    padding: 30px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-progress_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-progress {
+    width: 95%;
+    height: 20px;
+    background-color: #F5F7F9;
+    border-radius: 30px;
+    position: relative;
+}
+
+.project-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #623BFF;
+    border-radius: 30px;
+    width: 0;
+    transition: 1s;
+}
+
+.project-progress_number {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.project-progress-percent {
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+}
+
+.project-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.action {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.action-create, .action-add {
+    margin-right: 1px;
+}
+
+.action-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-left: 20px; */
+}
+
+.action-item h4 {
+    margin: 10px 0;
+}
+
+.action-edit_button button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #623BFF;
+    font-weight: 700;
+    padding: 0 1px;
+    border-bottom: 1px solid #623bff00;
+    transition: .3s;
+}
+
+.action-edit_button button:hover {
+    cursor: pointer;
+    border-color: #623BFF;
+}
+
+.action.action-add {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.action-add .action-forms {
+    width: 100%
+}
+
+.action-item .action-forms input[type="text"],
+.action-add .action-forms input[type="text"] {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    background-color: #F5F7F9;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 0 20px;
+}
+
+.action-add .action-forms input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.action-item .action-btns button {
+    width: 33%;
+    height: 35px;
+    box-sizing: border-box;
+    border: none;
+    transition: .3s;
+}
+
+.action-add .action-btns button {
+    width: 50%;
+    height: 35px;
+    box-sizing: border-box;
+    border: none;
+    transition: .3s;
+}
+
+.project-btns_right button,
+.project-btns_left button {
+    width: 150px;
+    height: 35px;
+    box-sizing: border-box;
+    border: none;
+    transition: .3s;
+}
+
+.project-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-btns_left button:first-child,
+.action-item .action-btns button:first-child,
+.action-add .action-btns button:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #d9ffd9;
+}
+
+.project-btns_right button,
+.action-item .action-btns button:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #ffd9d9;
+}
+
+.project-btns_right button {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.project-btns_left button:last-child,
+.action-add .action-btns button:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.project-btns_left button:first-child:hover,
+.action-item .action-btns button:first-child:hover,
+.action-add .action-btns button:first-child:hover {
+    cursor: pointer;
+    background-color: #e9ffe9;
+}
+
+.project-btns_left button:last-child:hover,
+.action-item .action-btns button:nth-child(2):hover,
+.action-add .action-btns button:last-child:hover {
+    cursor: pointer;
+    background-color: #f3f3f3;
+}
+
+.project-btns_right button:hover,
+.action-item .action-btns button:last-child:hover {
+    cursor: pointer;
+    background-color: #ffe4e4;
+}
+
+.project-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-heading .project-right button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #623BFF;
+    font-weight: 700;
+    padding: 0 1px;
+    border-bottom: 1px solid #623bff00;
+    transition: .3s;
+}
+
+.project-heading .project-right button:hover {
+    cursor: pointer;
+    border-color: #623BFF;
+}
+
+
+.project-header > input,
+.project-header > textarea {
+    background-color: #F5F7F9;
+    border-radius: 15px;
+    padding: 9px 27px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid #ff8bda00;
+    color: #747474;
+    margin-bottom: 16px;
+}
+
+.project-header > textarea {
+    resize: vertical;
+}
+
+.project-header > input {
+    transition: .25s;
+}
+
+.project-header > input:hover,
+.project-header > input:active,
+.project-header > input:focus,
+.project-header > textarea:hover,
+.project-header > textarea:active,
+.project-header > textarea:focus {
+    border-color: #ff8bda;
+}
+
+.project-header > input::placeholder,
+.project-header > textarea::placeholder {
+    color: #CACACA;
+}
